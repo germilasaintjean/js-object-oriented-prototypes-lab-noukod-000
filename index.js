@@ -1,7 +1,9 @@
-function BoardMember(name, homeState, training){
+function BoardMember(name, homeState, training)
+{
   this.name = name;
   this.homeState = homeState;
   this.training = training;
+}
 
   BoardMember.veto = function()
   {
@@ -24,7 +26,7 @@ function BoardMember(name, homeState, training){
   };
 
 
-    BoardMember.sayHi = function()
+  BoardMember.sayHi = function()
   {
     return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
   };
